@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\admin\NoticiasController;
 use App\Http\Controllers\Admin\OrderController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,3 +41,5 @@ Route::get('departments/{department}', ShowDepartment::class)->name('admin.depar
 Route::get('cities/{city}', CityComponent::class )->name('admin.cities.show');
 
 Route::get('users', UserComponent::class )->name('admin.users.index');
+
+Route::get('noticias', [NoticiasController::class, 'index'])->name('admin.notice.index');

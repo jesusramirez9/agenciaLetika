@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogPostController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\OrderController;
@@ -67,6 +68,11 @@ Route::get('conocenos', function () {
 Route::get('servicios', function () {
     return view('web.servicios');
 })->name('servicios');
+
+Route::get('noticias', [BlogPostController::class, 'index'])->name('posts.index');
+Route::get('noticias/{post}', [BlogPostController::class, 'show'])->name('posts.show');
+
+
 
 
 Route::get('contactanos',[ContactoController::class, 'index'])->name('contacto');

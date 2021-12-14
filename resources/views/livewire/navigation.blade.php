@@ -1,123 +1,134 @@
 <div>
-    <header class="fondo_bg  w-full py-4 top-0" style="z-index: 900" x-data="dropdown()">
-        <div class="container flex items-center h-16 justify-between md:justify-start">
+    <header class="  w-full py-4 top-0" style="z-index: 900" x-data="dropdown()">
+        <div class="container flex items-center h-16 justify-between md:justify-center">
             <a :class="{'bg-opacity-100 text-orange-500' : open}" x-on:click="show()"
                 class="flex flex-col items-center justify-center md:hidden order-last md:order-first px-2 md:px-4 bg-white bg-opacity-25 text-white cursor-pointer font-semibold h-2/3">
-                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <svg class="h-6 w-6 text-black" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-    
-                {{-- <span class="text-sm hidden md:block">Categorías</span> --}}
+
+                {{-- <span class="text-sm hidden md:block">X</span> --}}
             </a>
-    
-    
+
             <a href="/">
-                <img src="{{ asset('img/logo.png') }}" class="w-24 h-24 " alt="">
+                <x-jet-application-mark class="w-12 h-12 "/>
             </a>
-            <a href="{{ route('conocenos') }}"  class="mx-6 text-white font-bold hover:linktran hover:bg-yellow-500 hover:px-4 hover:rounded-md hidden lg:block  {{ request()->is('conocenos') ? 'active linktran  bg-yellow-500 px-4 rounded-md underline' : '' }}">
-                Conócenos
+            
+            <a  href="{{ route('conocenos') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('conocenos*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+                <span  class="hidden md:block">Conócenos</span>
             </a>
-            <a href="http://127.0.0.1:8000/categories/moda"
-                class="mx-6 text-white font-bold hover:bg-yellow-500 hover:px-4 hover:linktran hover:rounded-md hidden md:block  {{ request()->is('categories/*') ? 'active linktran  bg-yellow-500 px-4 rounded-md underline' : '' }}">
-                Catálogo
+
+            <a  href="http://127.0.0.1:8000/categories/moda"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('categories/*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+                <span  class="hidden md:block">Plantillas</span>
             </a>
-            <a href="{{ route('servicios') }}" class="mx-6 text-white font-bold hover:linktran hover:bg-yellow-500 hover:px-4 hover:rounded-md hidden md:block  {{ request()->is('servicios') ? 'active linktran bg-yellow-500 px-4 rounded-md underline' : '' }}">
-                Servicios
+            <a  href="{{ route('servicios') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+                <span  class="hidden md:block">Servicios</span>
             </a>
-            <a href="{{ route('contacto') }}" class="mx-6 text-white font-bold hover:linktran hover:bg-yellow-500 hover:px-4 hover:rounded-md hidden md:block  {{ request()->is('contactanos') ? 'active linktran  bg-yellow-500 px-4 rounded-md underline' : '' }}">
-                Escríbenos
+            <a  href=""
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+                <span  class="hidden md:block">Hosting</span>
             </a>
-    
-            <div class="flex-1 hidden xl:block">
+            <a  href="{{route('posts.index')}}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+                <span  class="hidden md:block">Noticias</span>
+            </a>
+            <a  href="{{ route('contacto') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('contactanos*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+                <span  class="hidden md:block">Escríbenos</span>
+            </a>
+           
+          
+
+             <div class="flex-1 hidden xl:block">
                 @livewire('search')
-            </div>
-    
+            </div> 
+
             <div class="mx-6 relative hidden md:block">
                 @auth
-    
+
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
-    
+
                             <button
                                 class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
                                 <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}"
                                     alt="{{ Auth::user()->name }}" />
                             </button>
-    
+
                         </x-slot>
-    
+
                         <x-slot name="content">
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Account') }}
                             </div>
-    
+
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
-    
+
                             <x-jet-dropdown-link href="{{ route('orders.index') }}">
                                 Mis ordenes
                             </x-jet-dropdown-link>
-    
+
                             @role('admin')
                                 <x-jet-dropdown-link href="{{ route('admin.index') }}">
                                     Administrador
                                 </x-jet-dropdown-link>
                             @endrole
-    
+
                             <div class="border-t border-gray-100"></div>
-    
+
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-    
+
                                 <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                            this.closest('form').submit();">
+                                                                        this.closest('form').submit();">
                                     {{ __('Log Out') }}
                                 </x-jet-dropdown-link>
                             </form>
                         </x-slot>
                     </x-jet-dropdown>
-    
+
                 @else
-    
+
                     <x-jet-dropdown align="right" width="48">
-    
+
                         <x-slot name="trigger">
-                            <i class="fas fa-user-circle text-white text-3xl cursor-pointer"></i>
+                            <i class="fas fa-user-circle text-gray-700 text-3xl cursor-pointer"></i>
                         </x-slot>
-    
+
                         <x-slot name="content">
                             <x-jet-dropdown-link href="{{ route('login') }}">
                                 {{ __('Login') }}
                             </x-jet-dropdown-link>
-    
+
                             <x-jet-dropdown-link href="{{ route('register') }}">
                                 {{ __('Register') }}
                             </x-jet-dropdown-link>
                         </x-slot>
-    
+
                     </x-jet-dropdown>
-    
+
                 @endauth
             </div>
-    
+
             <div class="hidden md:block">
                 @livewire('dropdown-cart')
             </div>
-    
-            <a href="" class="md:mx-6"><img class="w-9 h-9" src="{{ asset('img/iconos/fb.png') }}"
-                    alt=""></a>
-            <a href="" class=""><img class="w-9 h-9" src="{{ asset('img/iconos/insta.png') }}"
-                    alt=""></a>
-    
+
+           
+
         </div>
-    
+
         <nav id="navigation-menu" :class="{'block': open, 'hidden': !open}"
             class="bg-trueGray-700 mt-4 z-10 bg-opacity-25 w-full absolute hidden">
-    
+
             {{-- Menu computadora --}}
             {{-- <div class="container h-full hidden md:block">
                 <div
@@ -149,14 +160,14 @@
                     </div>
                 </div>
             </div> --}}
-    
+
             {{-- menu mobil --}}
             <div class="bg-white h-2/5 overflow-y-auto">
-    
+
                 <div class="container bg-gray-200 py-3 mb-2">
                     @livewire('search')
                 </div>
-    
+
                 <ul>
                     @foreach ($categories as $category)
                         {{-- <li class="text-trueGray-500 hover:bg-orange-500 hover:text-white">
@@ -180,7 +191,8 @@
                         </a>
                     </li> --}}
                     <li>
-                        <a href="{{ route('conocenos') }}" class="py-2 px-4 text-sm flex items-center {{ request()->is('conocenos') ? 'active text-yellow-500 underline' : '' }}">
+                        <a href="{{ route('conocenos') }}"
+                            class="py-2 px-4 text-sm flex items-center {{ request()->is('conocenos') ? 'active text-yellow-500 underline' : '' }}">
                             <span class="flex justify-center w-9">
                                 {!! $category->icon !!}
                             </span>
@@ -197,7 +209,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('servicios') }}" class="py-2 px-4 text-sm flex items-center {{ request()->is('servicios') ? 'active text-yellow-500 underline' : '' }}">
+                        <a href="{{ route('servicios') }}"
+                            class="py-2 px-4 text-sm flex items-center {{ request()->is('servicios') ? 'active text-yellow-500 underline' : '' }}">
                             <span class="flex justify-center w-9">
                                 {!! $category->icon !!}
                             </span>
@@ -212,10 +225,9 @@
                             Escríbenos
                         </a>
                     </li>
-    
+
                 </ul>
-{{--     
-                <p class="text-trueGray-500 px-6 my-2">USUARIOS</p>
+                {{-- <p class="text-trueGray-500 px-6 my-2">USUARIOS</p>
     
                 @livewire('cart-mobil')
     

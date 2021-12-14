@@ -34,6 +34,10 @@
                         :active="request()->routeIs('admin.users.*')">
                         Usuarios
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.notice.index') }}"
+                        :active="request()->routeIs('admin.notice.*')">
+                        Noticias
+                    </x-jet-nav-link>
 
                 </div>
             </div>
