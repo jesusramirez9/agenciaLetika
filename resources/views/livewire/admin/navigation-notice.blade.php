@@ -8,12 +8,11 @@
                     <x-jet-nav-link href="{{ route('admin.notice.index') }}" :active="request()->routeIs('admin.notice.index')">
                         Categorías
                     </x-jet-nav-link>
-                    <x-jet-nav-link href=""
-                        :active="request()->routeIs('admin.orders.*')">
+                    <x-jet-nav-link href="{{route('admin.posts.index')}}"
+                        :active="request()->routeIs('admin.posts.*')">
                         Crear nuevo post
                     </x-jet-nav-link>
                   
-
                 </div>
             </div>
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogCategoryController;
+use App\Http\Controllers\Admin\BlogPostController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\admin\NoticiasController;
 use App\Http\Controllers\Admin\OrderController;
@@ -43,3 +45,7 @@ Route::get('cities/{city}', CityComponent::class )->name('admin.cities.show');
 Route::get('users', UserComponent::class )->name('admin.users.index');
 
 Route::get('noticias', [NoticiasController::class, 'index'])->name('admin.notice.index');
+Route::get('posts', [BlogPostController::class, 'index'])->name('admin.posts.index');
+
+
+Route::resource('blog/categories', BlogCategoryController::class)->names('admin.blog.categories');

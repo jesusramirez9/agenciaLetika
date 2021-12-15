@@ -8,6 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class BlogPost extends Model
 {
     use HasFactory;
+        // protected $fillable = ['name','slug'];
+        protected $guarded = ['id','created_at','update_at'];
+
+        public function getRouteKeyName()
+        {
+          return "slug";
+        }
+    
+
     // relacion uno a muchos inversa
 
     public function user(){

@@ -4,7 +4,7 @@
 
         @livewire('admin.navigation-notice')
         <div class="py-8">
-            @livewire('admin.create-blog-category')
+            @livewire('admin.create-post-category')
 
         </div>
     </div>
