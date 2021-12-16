@@ -1,14 +1,10 @@
 <x-app-layout>
-
-
-
-
     <div class="container  py-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24">
             <div>
                 <!-- Place somewhere in the <body> of your page -->
                 <div class="md:mt-0 mb-3">
-                    <p class="titl_cata"> Catalogo / <span class="tipo_catalog">{{ $product->name }}</span> </p>
+                    <p class="titl_cata"> Plantilla elegida: <span class="text-gray-700">{{ $product->name }}</span> </p>
                 </div>
                 <div class="flexslider">
                     <ul class="slides">
@@ -28,7 +24,7 @@
                 <h1 class="text-xl font-bold  title_product">{{ $product->name }}</h1>
               <div class="flex">
 
-                    <a class="underline hover:text-orange-600" href="#resña">{{ count($product->reviews)}} comentarios de nuestros clientes</a>
+                    <a class="underline hover:text-orange-600" href="#resña">{{ count($product->reviews)}} comentarios de nuestros clientes (mostrar comentarios)</a>
                 </div> 
                 <p class="text-2xl my-4 font-semibold price_produc">S/ {{ $product->price }}</p>
                 <hr class=" mb-4 hrgreen">
@@ -58,33 +54,48 @@
 
                 @endif
 
-                <div class="bg-detalledeliv mt-4">
-                    <div class="flex">
+                <div class="px-8 py-6 bg-gray-700 mt-4">
+                    <div class="flex items-center">
                         <div>
                             <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
                         </div>
                         <div class="ml-3">
-                            <h1 class="detalledeliv">Compra satisfactoria</h1>
-                            {{-- <p class="mt-1 detalledelivp">Aquí irá un texto sobre el titular, el cual <br> leerá el
-                                usuario. <a class="underline detalledeliv">Leer más</a> </p> --}}
+                            <h1 class="text-gray-200 font-medium">Diseño adaptable para dispositivos móviles (Responsive design).</h1>
                         </div>
                     </div>
-                    <div class="flex mt-4">
+                    <div class="flex items-center mt-3">
                         <div>
-                            <img src="{{ asset('images/catalogoproductos/fast.png') }}" alt="">
+                            <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
                         </div>
                         <div class="ml-3">
-                            <h1 class="detalledeliv">Delivery a todo lima</h1>
+                            <h1 class="text-gray-200 font-medium">Hasta 5 páginas internas.</h1>
                         </div>
                     </div>
-                    <div class="flex mt-4">
+                    <div class="flex items-center mt-3">
                         <div>
-                            <img src="{{ asset('images/catalogoproductos/cards.png') }}" alt="">
+                            <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
                         </div>
                         <div class="ml-3">
-                            <h1 class="detalledeliv">Paga en línea de manera segura</h1>
+                            <h1 class="text-gray-200 font-medium">Formulario de contacto.</h1>
                         </div>
                     </div>
+                    <div class="flex items-center mt-3">
+                        <div>
+                            <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
+                        </div>
+                        <div class="ml-3">
+                            <h1 class="text-gray-200 font-medium">Integración con Redes Sociales. (WhatsApp, Facebook e Instagram)</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-3">
+                        <div>
+                            <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
+                        </div>
+                        <div class="ml-3">
+                            <h1 class="text-gray-200 font-medium">Optimización en buscadores (SEO básico).</h1>
+                        </div>
+                    </div>
+                  
                 </div>
 
             </div>
@@ -117,7 +128,7 @@
      
         <div class="text-center">
             <div class="text-center py-4 md:py-8 ">
-                <p class="text-xl md:text-2xl lg:text-4xl verdegreen font-bold">Más Productos </p>
+                <p class="text-xl md:text-2xl lg:text-4xl  font-bold">Más Plantillas que te pueden gustar </p>
             </div>
            
             <div class="glider-contain">
