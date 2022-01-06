@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/">
-                        <img src="{{ asset('img/logo.png') }}" class="w-24 h-24 " alt="">
+                        <x-jet-application-mark class="w-12 h-12 " />
                     </a>
                 </div>
 

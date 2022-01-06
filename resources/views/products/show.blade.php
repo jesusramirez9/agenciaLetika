@@ -60,7 +60,7 @@
                             <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
                         </div>
                         <div class="ml-3">
-                            <h1 class="text-gray-200 font-medium">Diseño adaptable para dispositivos móviles (Responsive design).</h1>
+                            <h1 class="text-gray-200 font-medium">Diseño adaptable para dispositivos móviles.</h1>
                         </div>
                     </div>
                     <div class="flex items-center mt-3">
@@ -84,7 +84,7 @@
                             <img src="{{ asset('images/catalogoproductos/checkm.png') }}" alt="">
                         </div>
                         <div class="ml-3">
-                            <h1 class="text-gray-200 font-medium">Integración con Redes Sociales. (WhatsApp, Facebook e Instagram)</h1>
+                            <h1 class="text-gray-200 font-medium">Integración con Redes Sociales.</h1>
                         </div>
                     </div>
                     <div class="flex items-center mt-3">

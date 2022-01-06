@@ -6,7 +6,7 @@
         </div>
         <div class="mt-8 absolute text-center max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-40 text-white  lr">
             <p class="m-0 shdot-text text-2xl">Contáctenos si tiene alguna pregunta sobre los servicios.</p>
-            <p class="m-0 shdot-text font-black text-2xl lg:text-6xl xl:text-8xl">Reserve una cita</p>
+            <p class="m-0 shdot-text font-black text-2xl lg:text-6xl xl:text-8xl">Te llamaremos</p>
 
         </div>
     </div>

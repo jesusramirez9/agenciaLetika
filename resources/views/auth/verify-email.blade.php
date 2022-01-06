@@ -11,10 +11,10 @@
             <div class="alselcent">
                 <div class="flex items-center justify-center text-center pb-6 ">
                     <div>
-                        <img src="{{ asset('images/login_user/Iso.png') }}" alt="">
+                        <x-jet-application-mark class="w-12 h-12 " />
                     </div>
                     <div>
-                        <p class="ml-2 text-xl md:text-2xl txtbrde font-bold">Verificación de cuenta</p>
+                        <p class="ml-2 text-xl md:text-2xl  font-bold">Verificación de cuenta</p>
                     </div>
                 </div>
                 <div class="mb-4 text-sm text-gray-600">
@@ -31,7 +31,7 @@
                         @csrf
         
                         <div>
-                            <x-jet-button type="submit" class="bg-footer">
+                            <x-jet-button type="submit" >
                                 {{ __('Resend Verification Email') }}
                             </x-jet-button>
                         </div>

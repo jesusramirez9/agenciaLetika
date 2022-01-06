@@ -61,11 +61,12 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8  divide-x divide-opacity-40 divide-gray-400 ">
             <div class="py-0 pl-8 md:py-12 px-2">
                 <div class="mt-4 md:mt-0 mb-4">
-                <img src="{{asset('dental/home/logo.png')}}" alt="">
-
+                    <a href="/">
+                        <x-jet-application-mark class="w-12 h-12 " />
+                    </a>
                 </div>
                 <p>
-                    El Centro Odontológico ofrece una renovada infraestructura que nos permite brindar una atención de
+                    Nuestro centro de desarrollo web se encargarà de reforzar sus ventas online siguiendo una linea adecuada a su rubro la que nos permite brindar una atención de
                     <span class="text-black font-black">excelente calidad.</span>
                 </p>
             </div>
@@ -89,22 +90,22 @@
                 </ul>
             </div>
             <div class="py-0 pl-8 md:py-12 hidden md:block">
-                <h5 class="text-gray-700 font-semibold pb-4 md:pb-6">Nuestras Especialidades</h5>
+                <h5 class="text-gray-700 font-semibold pb-4 md:pb-6">Nuestros mejores servicios</h5>
                 <ul class="text-gray-700 font-medium">
                     <li>
-                        Ortodoncia
+                        Planes de hosting
                     </li>
                     <li class="mt-3">
-                        Cirugía de Tercera molar
+                        Dominios personalizados
                     </li>
                     <li class="mt-3">
-                        Implantes Dentales
+                        Páginas Ecommerce
                     </li>
                     <li class="mt-3">
-                        Odontopediatría
+                        Páginas informativas
                     </li>
                     <li class="mt-3">
-                        Diseño de sonrisa
+                        Blogs y más
                     </li>
                 </ul>
             </div>

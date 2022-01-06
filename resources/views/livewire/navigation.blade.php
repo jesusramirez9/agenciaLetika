@@ -12,41 +12,52 @@
             </a>
 
             <a href="/">
-                <x-jet-application-mark class="w-12 h-12 "/>
-            </a>
-            
-            <a  href="{{ route('conocenos') }}"
-                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('conocenos*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
-                <span  class="hidden md:block">Conócenos</span>
+                <x-jet-application-mark class="w-12 h-12 " />
             </a>
 
-            <a  href="http://127.0.0.1:8000/categories/moda"
-                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('categories/*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
-                <span  class="hidden md:block">Plantillas</span>
+            <a href="/"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('/','inicio*') ? 'active  border-purple-700  bg-gray-700 bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Inicio</span>
             </a>
-            <a  href="{{ route('servicios') }}"
-                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
-                <span  class="hidden md:block">Servicios</span>
+
+            <a href="{{ route('conocenos') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('conocenos*') ? 'active  border-purple-700  bg-gray-700 bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Conócenos</span>
             </a>
-            <a  href=""
-                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
-                <span  class="hidden md:block">Hosting</span>
+            {{-- <a href="{{ route('servicios') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios') ? 'active  border-orange-700  bg-orange-600 bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Servicios</span>
             </a>
-            <a  href="{{route('posts.index')}}"
-                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
+            --}}
+
+
+            <a href="{{ route('hosting') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('hosting') ? 'active  bg-gray-700  bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Hosting</span>
+            </a>
+            {{-- <a  href="{{route('posts.index')}}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('servicios*') ? 'active  border-purple-700  bg-gray-700 bg-opacity-20' : '' }}">
                 <span  class="hidden md:block">Noticias</span>
-            </a>
-            <a  href="{{ route('contacto') }}"
-                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('contactanos*') ? 'active  border-purple-700  bg-purple-600 bg-opacity-20' : '' }}">
-                <span  class="hidden md:block">Escríbenos</span>
-            </a>
-           
-          
+            </a> --}}
 
-             <div class="flex-1 hidden xl:block">
+            <a href="{{ route('dominio') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('dominio*') ? 'active  border-purple-700  bg-gray-700 bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Dominio</span>
+            </a>
+            <a href="http://127.0.0.1:8000/categories/moda"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('categories/*') ? 'active  border-purple-700  bg-gray-700 bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Plantillas</span>
+            </a>
+            <a href="{{ route('contacto') }}"
+                class="flex flex-row items-center w-full px-2 py-2 mt-2 text-xs xl:text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline {{ request()->is('contactanos*') ? 'active  border-purple-700  bg-gray-700 bg-opacity-20' : '' }}">
+                <span class="hidden md:block">Escríbenos</span>
+            </a>
+            {{-- <div class="flex-1 hidden xl:block">
                 @livewire('search')
-            </div> 
+            </div> --}}
+            <div class="flex-1">
 
+            </div>
             <div class="mx-6 relative hidden md:block">
                 @auth
 
@@ -55,8 +66,8 @@
 
                             <button
                                 class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
-                                <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}"
-                                    alt="{{ Auth::user()->name }}" />
+                                <img class="h-8 w-8 rounded-full object-cover"
+                                    src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                             </button>
 
                         </x-slot>
@@ -88,7 +99,7 @@
                                 @csrf
 
                                 <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                        this.closest('form').submit();">
+                                                                                this.closest('form').submit();">
                                     {{ __('Log Out') }}
                                 </x-jet-dropdown-link>
                             </form>
@@ -122,7 +133,7 @@
                 @livewire('dropdown-cart')
             </div>
 
-           
+
 
         </div>
 

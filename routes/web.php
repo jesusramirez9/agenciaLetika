@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogPostController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\DomainController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SearchController;
@@ -68,6 +69,14 @@ Route::get('conocenos', function () {
 Route::get('servicios', function () {
     return view('web.servicios');
 })->name('servicios');
+
+
+Route::get('hosting', function () {
+    return view('web.hosting');
+})->name('hosting');
+
+Route::get('dominio', [DomainController::class, 'index'])->name('dominio');
+Route::post('dominio', [DomainController::class, 'store'])->name('store');
 
 Route::get('noticias', [BlogPostController::class, 'index'])->name('posts.index');
 Route::get('noticias/{post}', [BlogPostController::class, 'show'])->name('posts.show');

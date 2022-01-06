@@ -143,7 +143,6 @@ background-color: #FFF7F4;
 }
 .mytabs input[type='radio']:checked + label {
     
-    color: #9c303d;
     text-decoration: underline;
     text-underline-position: under;
 }
@@ -259,116 +258,7 @@ background-color: #FFF7F4;
     color: #9c303d;
 }
 
-/* .radio-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-.radio-item {
-    background-color: #fff;
-    display: block;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: auto;
-    padding: 0;
-    border-radius: 4px;
-}
-.radio-item {
-    min-height: 20px;
-    padding: 5px 0;
-    width: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.radio-item input {
-    top: inherit;
-}
-.radio-items input {
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-}
 
-.radio-item-input {
-    position: absolute;
-    top: 5px;
-    height: 21px;
-    width: 21px;
-    z-index: 20;
-    opacity: 0;
-    border-radius: 6px;
-    line-height: normal;
-}
-
-.item-radio {
-    display: none;
-}
-.item-radio, .radio-item label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.radio-item .item-radio {
-    width: 21px;
-    height: 21px;
-    border-radius: 100%;
-    background: #fff;
-    color: #00b362;
-    border: 1px solid #70578b;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-right: 10px;
-}
-.labelsize{
-    min-width: 40px;
-}
-.labelsize{
-    cursor: pointer;
-    -webkit-transition: border-color .3s ease;
-    transition: border-color .3s ease;
-    -webkit-transition-property: border-color,color,background;
-    transition-property: border-color,color,background;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    height: 40px;
-    font-size: 14px;
-    padding: 0 15px;
-    color: #464646;
-    border: 1px solid #464646;
-    border-radius: 4px;
-    font-weight: 600;
-}
-.radio-items{
-    display: flex;
-} */
 .item-radio{
     display: none;
 }

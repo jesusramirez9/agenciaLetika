@@ -11,10 +11,10 @@
                 <div class="alselcent">
                     <div class="flex items-center justify-center text-center pb-6 ">
                         <div>
-                            <img src="{{asset('img/logo.png')}}" class="w-16"  alt="">
+                            <x-jet-application-mark class="w-12 h-12 " />
                         </div>
                         <div>
-                            <p class="ml-4 text-xl md:text-2xl verdegreen font-bold">Crea tu cuenta</p>
+                            <p class="ml-4 text-xl md:text-2xl  font-bold">Crea tu cuenta</p>
                         </div>
                     </div>
                     <form method="POST" action="{{ route('register') }}">
@@ -22,25 +22,25 @@
         
                         <div>
                             {{-- <x-jet-label for="name" value="{{ __('Name') }}" /> --}}
-                            <x-jet-input id="name" class="block mt-1 w-full inptvrd" placeholder="Nombres y apellidos*" type="text" name="name" :value="old('name')"
+                            <x-jet-input id="name" class="block mt-1 w-full " placeholder="Nombres y apellidos*" type="text" name="name" :value="old('name')"
                                 required autofocus autocomplete="name" />
                         </div>
         
                         <div class="mt-4">
                             {{-- <x-jet-label for="email" value="{{ __('Email') }}" /> --}}
-                            <x-jet-input id="email" class="block mt-1 w-full inptvrd" placeholder="Correo electrónico*" type="email" name="email" :value="old('email')"
+                            <x-jet-input id="email" class="block mt-1 w-full " placeholder="Correo electrónico*" type="email" name="email" :value="old('email')"
                                 required />
                         </div>
         
                         <div class="mt-4">
                             {{-- <x-jet-label for="password" value="{{ __('Password') }}" /> --}}
-                            <x-jet-input id="password" class="block mt-1 w-full inptvrd" placeholder="Contraseña*" type="password" name="password" required
+                            <x-jet-input id="password" class="block mt-1 w-full " placeholder="Contraseña*" type="password" name="password" required
                                 autocomplete="new-password" />
                         </div>
         
                         <div class="mt-4">
                             {{-- <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" /> --}}
-                            <x-jet-input id="password_confirmation" class="block mt-1 w-full inptvrd" placeholder="Repetir Contraseña*"  type="password"
+                            <x-jet-input id="password_confirmation" class="block mt-1 w-full " placeholder="Repetir Contraseña*"  type="password"
                                 name="password_confirmation" required autocomplete="new-password" />
                         </div>
         
@@ -62,14 +62,14 @@
                         @endif
         
                         <div class="mt-4 w-full">
-                            <x-jet-button class=" d-blck w-full text-center bg-footer">
+                            <x-jet-button class=" d-blck w-full text-center ">
                                 {{ __('Register') }}
                             </x-jet-button>
                         </div>
                     </form>
                     <div class="mt-4 flex justify-center text-center">
                         <p>¿Ya tienes tu cuenta?</p>
-                        <a href="{{ route('login') }}" class="ml-2 underline verdegreen font-bold">Inicia sesión</a>
+                        <a href="{{ route('login') }}" class="ml-2 underline  font-bold">Inicia sesión</a>
                     </div>
                 </div>
                 <div class="jtifyend imgregisterdp">
